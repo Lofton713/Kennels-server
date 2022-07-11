@@ -1,34 +1,34 @@
-EMPLOYEES = [
+CUSTOMERS = [
     [
         {
             "id": 1,
-            "name": "Joe Smith"
+            "name": "Dan Danson"
         },
         {
             "id": 2,
-            "name": "Jane Smith"
+            "name": "Bob Bobson"
         },
         {
             "id": 3,
-            "name": "Jack Jackson"
+            "name": "Jill Jillson"
         }
     ]
 ]
 
 # function to return all locations
-def get_all_employees():
-    return EMPLOYEES
+def get_all_customers():
+    return CUSTOMERS
 
-def get_single_employee():
+def get_single_customer():
     # Variable to hold the employee
-    requested_employee = None
+    requested_customer = None
     
     # Iterate the EMPLOYEES list above. Very similar to the
     # for..of loops you used in JavaScript.
-    for employee in EMPLOYEES:
+    for customer in CUSTOMERS:
         # Dictionaries in Python use [] notation to find a key
         # instead of the dot notation that JavaScript used.
-        if employee["id"] == id:
-            requested_employee = employee
+        if customer["id"] == id:
+            requested_customer = customer
 
-    return requested_employee
+    return requested_customer
