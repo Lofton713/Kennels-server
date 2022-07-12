@@ -172,7 +172,7 @@ class HandleRequests(BaseHTTPRequestHandler):
             update_location(id, post_body)
         # Delete a single animal from the list
         if resource == "employees":
-            update_employees(id, post_body)
+            update_employee(id, post_body)
 
         # Encode the new animal and send in response
         self.wfile.write("".encode())
