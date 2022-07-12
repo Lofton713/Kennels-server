@@ -1,5 +1,8 @@
+from re import L
+
+
 LOCATIONS = [
-    [
+    
         {
             "id": 1,
             "name": "Nashville North",
@@ -10,7 +13,7 @@ LOCATIONS = [
             "name": "Nashville South",
             "address": "209 Emory Drive"
         }
-    ]
+    
 ]
 
 # function to return all locations
@@ -30,3 +33,19 @@ def get_single_location():
             requested_location = location
 
     return requested_location
+
+def create_location(location):
+    # Get the id value of the last animal in the list
+    max_id = LOCATIONS[-1]["id"]
+
+    # Add 1 to whatever that number is
+    new_id = max_id + 1
+
+    # Add an `id` property to the animal dictionary
+    location["id"] = new_id
+
+    # Add the animal dictionary to the list
+    LOCATIONS.append(location)
+
+    # Return the dictionary with `id` property added
+    return location
