@@ -33,7 +33,8 @@ def get_all_locations():
         SELECT
             a.id,
             a.name,
-            a.address            
+            a.address
+        
         FROM location a
         """)
 
